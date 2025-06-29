@@ -5,6 +5,9 @@ import { Toaster } from '@/components/ui/sonner'
 export const metadata: Metadata = {
   title: 'Uday Vara',
   description: 'Uday Vara - FUll Stack Developer from India',
+  icons: {
+    icon: "/favicon.ico", // or .svg
+  },
 }
 
 export default function RootLayout({

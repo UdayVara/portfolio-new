@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/sonner'
 
 export const metadata: Metadata = {
   title: 'Uday Vara',
-  description: 'Uday Vara - FUll Stack Developer from India',
+  description: 'Uday Vara - Full Stack Developer from India',
   icons: {
     icon: "/favicon.ico", // or .svg
   },

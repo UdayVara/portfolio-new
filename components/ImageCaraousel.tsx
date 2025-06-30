@@ -22,6 +22,7 @@ export default function ImageCarousel({ images }: Props) {
       stopOnInteraction: false,
       stopOnMouseEnter: true,
       stopOnFocusIn: true,
+      playOnInit:false
 
     })
   )

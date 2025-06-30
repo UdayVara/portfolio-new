@@ -54,13 +54,13 @@ export default function Portfolio() {
     backend: [
       "Node.js",
       "Nest JS",
-      "Express",
+      "Express JS",
       "Redis",
-      "Swagger",
+      "Socket.io",
       "REST APIs",
       "Kafka",
       "Bull MQ",
-      "JWT Auth",
+      "WebRTC",
     ],
     database: [
       "PostgreSQL",

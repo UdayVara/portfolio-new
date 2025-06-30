@@ -58,7 +58,7 @@ export default function ImageCarousel({ images }: Props) {
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                className="w-full md:h-80 object-contain md:object-cover rounded md:rounded-2xl shadow-lg"
               />
             </CarouselItem>
           ))}

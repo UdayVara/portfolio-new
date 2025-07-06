@@ -180,32 +180,39 @@ export default function Portfolio() {
   // Loading Screen
   if (isLoading) {
     return (
-      <div className="fixed inset-0 h-screen bg-black flex items-center justify-center z-50">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="text-center"
-        >
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{
-              duration: 2,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
-            className="w-16 h-16 border-4 border-blue-400 border-t-transparent rounded-full mx-auto mb-4"
-          />
-          <motion.h1
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
-          >
-            Loading Experience...
-          </motion.h1>
-        </motion.div>
-      </div>
+     <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: 30 }}
+  transition={{ duration: 0.3 }}
+  className="fixed inset-0 h-screen min-h-[100dvh] bg-black flex items-center justify-center z-50"
+>
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="text-center"
+  >
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{
+        duration: 2,
+        repeat: Number.POSITIVE_INFINITY,
+        ease: "linear",
+      }}
+      className="w-16 h-16 border-4 border-blue-400 border-t-transparent rounded-full mx-auto mb-4"
+    />
+    <motion.h1
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.5 }}
+      className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"
+    >
+      Loading Experience...
+    </motion.h1>
+  </motion.div>
+</motion.div>
+
     );
   }
 

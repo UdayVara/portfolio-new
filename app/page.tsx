@@ -30,6 +30,7 @@ import Link from "next/link";
 import ImageCarousel from "@/components/ImageCaraousel";
 import { DiscordCloneProjectImages, NotionProjectImages, TrendiqProjectImages } from "@/components/Images";
 import ContactForm from "@/components/ContactUsForm";
+import { FloatingDock, FloatingDockMobile } from "@/components/FloatingDock";
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -471,31 +472,7 @@ export default function Portfolio() {
               </motion.div>
             </motion.div>
 
-            <motion.div
-              className="flex justify-center space-x-8"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              {[
-                { icon: Github, href: "https://github.com/UdayVara", color: "hover:text-green-400" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/uday-vara-16b2a21b6/", color: "hover:text-blue-400" },
-                { icon: Mail, href: "mailto:varaudayd@gmail.com", color: "hover:text-orange-400" },
-              ].map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  whileHover={{ scale: 1.3, y: -5, rotate: 5 }}
-                  whileTap={{ scale: 0.9 }}
-                  className={`text-gray-400 ${social.color} transition-all duration-300 p-3 rounded-full bg-gray-800/50 backdrop-blur-sm`}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                >
-                  <social.icon size={28} />
-                </motion.a>
-              ))}
-            </motion.div>
+           
           </motion.div>
         </div>
 
@@ -1270,6 +1247,16 @@ export default function Portfolio() {
           </div>
         </div>
       </footer>
+      <FloatingDock desktopClassName="fixed bottom-4  mx-auto bg-neutral-950/30 border left-1/2 -translate-x-1/2 z-50  border-gray-700/30 backdrop-blur-sm " items={[
+                { icon: <Github />, href: "#", title: "Github" },
+                { icon: <Linkedin />, href: "#", title: "Linkedin" },
+                { icon: <Mail />, href: "#", title: "Mail" },
+              ]} />
+      <FloatingDockMobile className="fixed bottom-4 left-4 backdrop-blur-sm " items={[
+                { icon: <Github  className="h-7  w-7  block mx-auto text-center"/>, href: "#", title: "Github" },
+                { icon: <Linkedin  className="h-7  w-7  block mx-auto text-center "/>, href: "#", title: "Linkedin" },
+                { icon: <Mail className="h-7  w-7 block mx-auto text-center " />, href: "#", title: "Mail" },
+              ]} />
     </div>
   );
 }

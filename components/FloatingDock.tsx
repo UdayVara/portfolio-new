@@ -43,7 +43,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn(" fixed md:hidden z-[9999]", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -81,7 +81,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-full scale-110 bg-neutral-800"
+        className="flex h-10 w-10 items-center justify-center rounded-full scale-110 bg-neutral-800 z-[999]"
       >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-white" />
       </button>

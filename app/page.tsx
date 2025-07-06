@@ -180,7 +180,7 @@ export default function Portfolio() {
   // Loading Screen
   if (isLoading) {
     return (
-      <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
+      <div className="fixed inset-0 h-screen bg-black flex items-center justify-center z-50">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

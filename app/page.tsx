@@ -31,6 +31,7 @@ import ImageCarousel from "@/components/ImageCaraousel";
 import { DiscordCloneProjectImages, NotionProjectImages, TrendiqProjectImages } from "@/components/Images";
 import ContactForm from "@/components/ContactUsForm";
 import { FloatingDock, FloatingDockMobile } from "@/components/FloatingDock";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -467,7 +468,7 @@ export default function Portfolio() {
               >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-12 py-4 text-lg font-semibold rounded-full shadow-2xl shadow-blue-500/25"
+                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-12 py-4 text-lg font-semibold rounded-full md:block hidden shadow-2xl shadow-blue-500/25"
                   onClick={() =>
                     document
                       .getElementById("contact")
@@ -1264,6 +1265,7 @@ export default function Portfolio() {
                 { icon: <Linkedin  className="h-7  w-7  block mx-auto text-center "/>, href: "#", title: "Linkedin" },
                 { icon: <Mail className="h-7  w-7 block mx-auto text-center " />, href: "#", title: "Mail" },
               ]} />
+              <ScrollToTop />  
     </div>
   );
 }

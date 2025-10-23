@@ -468,7 +468,7 @@ export default function Portfolio() {
               >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-12 py-4 text-lg font-semibold rounded-full md:block hidden shadow-2xl shadow-blue-500/25"
+                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-12 py-4 text-lg font-semibold rounded-full md:inline-flex hidden shadow-2xl shadow-blue-500/25"
                   onClick={() =>
                     document
                       .getElementById("contact")

@@ -1237,9 +1237,9 @@ export default function Portfolio() {
             </motion.div>
             <div className="flex space-x-6">
               {[
-                { icon: Github, href: "#", color: "hover:text-green-400" },
-                { icon: Linkedin, href: "#", color: "hover:text-blue-400" },
-                { icon: Mail, href: "#", color: "hover:text-orange-400" },
+                { icon: Github, href: "https://github.com/UdayVara", color: "hover:text-green-400" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/uday-vara-16b2a21b6/", color: "hover:text-blue-400" },
+                { icon: Mail, href: "mailto:varaudayd@gmail.com", color: "hover:text-orange-400" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -1256,14 +1256,14 @@ export default function Portfolio() {
         </div>
       </footer>
       <FloatingDock desktopClassName="fixed bottom-4  mx-auto bg-neutral-950/30 border left-1/2 -translate-x-1/2 z-50  border-gray-700/30 backdrop-blur-sm " items={[
-                { icon: <Github />, href: "#", title: "Github" },
-                { icon: <Linkedin />, href: "#", title: "Linkedin" },
-                { icon: <Mail />, href: "#", title: "Mail" },
+                { icon: <Github />, href: "https://github.com/UdayVara", title: "Github" },
+                { icon: <Linkedin />, href: "https://www.linkedin.com/in/uday-vara-16b2a21b6/", title: "Linkedin" },
+                { icon: <Mail />, href: "mailto:varaudayd@gmail.com", title: "Mail" },
               ]} />
       <FloatingDockMobile className="fixed bottom-4 left-4 backdrop-blur-sm " items={[
-                { icon: <Github  className="h-7  w-7  block mx-auto text-center"/>, href: "#", title: "Github" },
-                { icon: <Linkedin  className="h-7  w-7  block mx-auto text-center "/>, href: "#", title: "Linkedin" },
-                { icon: <Mail className="h-7  w-7 block mx-auto text-center " />, href: "#", title: "Mail" },
+                { icon: <Github  className="h-7  w-7  block mx-auto text-center"/>, href: "https://github.com/UdayVara", title: "Github" },
+                { icon: <Linkedin  className="h-7  w-7  block mx-auto text-center "/>, href: "https://www.linkedin.com/in/uday-vara-16b2a21b6/", title: "Linkedin" },
+                { icon: <Mail className="h-7  w-7 block mx-auto text-center " />, href: "mailto:varaudayd@gmail.com", title: "Mail" },
               ]} />
               <ScrollToTop />  
     </div>
